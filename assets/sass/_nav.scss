@@ -1,0 +1,48 @@
+/*========================== NAVBAR ===========================*/
+
+.navigation {
+    background: $primary-color;
+    padding: 0 2rem;
+    height: 0;
+    min-height: 20vh;
+    overflow: hidden;
+    
+    .nav-brand {
+        display: inline-block;
+        padding: 1.6rem 0;
+        a {
+            font-size: 1.6rem;
+            vertical-align: middle;
+            margin-top: 1rem;
+            color: $text-primary;
+        }
+    }
+}
+
+.main-menu {
+    justify-content: space-between;
+}
+
+.main-menu {
+    .navbarNav {
+        display: flex;
+        margin: 0;
+        .navItem {
+            padding: 1.6rem 1rem;
+            .navLink {
+                font-size: 1.1rem;
+                color: $text-primary;
+                position: relative;
+            }
+        }
+    }
+    .social {
+        padding: 1.6rem 0;
+        a {
+            margin-right: .75rem;
+            color: $text-primary;
+        }
+    }
+}
+
+/*============x=========== END NAVBAR ============x============*/
