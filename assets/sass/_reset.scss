@@ -9,9 +9,54 @@ html, body {
     overflow-x: hidden;
 }
 
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    overflow: hidden;
+}
+
 /*========================= GLOBAL CLASSES ===============================*/
+.btn {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+span {
+    font-family: $abel;
+}
+
 a {
     text-decoration: none;
     color: $text-grey;
+    &:hover {
+        text-decoration: none;
+        color: $midnight;
+    }
 }
+
+h1 {
+    font-family: $lexend;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: $lexend;
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-family: $abel;
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: $lexend;
+    color: $text-light;
+}
+
+.text-grey {
+    color: $text-grey;
+}
+
+
 /*========================= END GLOBAL CLASSES ===============================*/

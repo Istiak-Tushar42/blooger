@@ -1,8 +1,10 @@
+/*================================ HEADER =================================*/
 .header {
+    z-index: 1;
     nav {
         .navbar-brand {
             font-size: 1.6rem;
-            font-family: $abel;
+            font-family: $lexend;
             font-weight: 500;
             &:hover {
                 color: $text-grey;
@@ -60,3 +62,4 @@
         transition: background 1s ease;
     }
 }
+/*================================ END HEADER =================================*/

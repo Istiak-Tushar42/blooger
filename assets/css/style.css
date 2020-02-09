@@ -11,16 +11,64 @@ html, body {
   overflow-x: hidden;
 }
 
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  overflow: hidden;
+}
+
 /*========================= GLOBAL CLASSES ===============================*/
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+span {
+  font-family: "Abel", cursive;
+}
+
 a {
   text-decoration: none;
   color: #3f4954;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #104f55;
+}
+
+h1 {
+  font-family: "Lexend Deca", cursive;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: "Lexend Deca", cursive;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-family: "Abel", cursive;
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: "Lexend Deca", cursive;
+  color: #686666da;
+}
+
+.text-grey {
+  color: #3f4954;
+}
+
 /*========================= END GLOBAL CLASSES ===============================*/
+/*================================ HEADER =================================*/
+.header {
+  z-index: 1;
+}
+
 .header nav .navbar-brand {
   font-size: 1.6rem;
-  font-family: "Abel", cursive;
+  font-family: "Lexend Deca", cursive;
   font-weight: 500;
 }
 
@@ -68,6 +116,322 @@ a {
   transition: background 1s ease;
 }
 
+/*================================ END HEADER =================================*/
+/*================================ MAIN CONTENT =================================*/
+/*================================ BANNER =================================*/
+.banner {
+  background: url("../images/Background-image.png") no-repeat center center/cover;
+  height: 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-background {
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner .banner-background h3 {
+  margin-bottom: 1rem;
+}
+
+.banner .banner-background h3::-moz-selection {
+  background: #104f55;
+}
+
+.banner .banner-background h3::selection {
+  background: #104f55;
+}
+
+.banner .banner-background h1 {
+  margin-bottom: 2.6rem;
+  letter-spacing: .1rem;
+}
+
+.banner .banner-background h1::-moz-selection {
+  background: #104f55;
+}
+
+.banner .banner-background h1::selection {
+  background: #104f55;
+}
+
+.banner .banner-background .myBtn {
+  border: none;
+  outline: 0;
+  border-radius: 2rem;
+  padding: .75rem 3rem;
+  font-size: 1rem;
+  font-family: "Livvic", sans-serif;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  letter-spacing: 1px;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.banner .banner-background .myBtn:hover {
+  background: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+}
+
+/*================================ END BANNER =================================*/
+/*================================ BLOG CAROUSEL =================================*/
+.blog {
+  background: url("../images/Abract01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%;
+}
+
+.blog .blog-post {
+  padding-top: 5rem;
+}
+
+.blog .blog-post .blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 78%;
+  margin: 3rem 2rem 3rem 0rem;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog .blog-post .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+.blog .blog-post .blog-content .blog-title .btn-blog {
+  padding: .7rem 2rem;
+  margin: .5rem;
+  border: none;
+  outline: 0;
+  border-radius: 2rem;
+  font-family: "Livvic", sans-serif;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  letter-spacing: 1px;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.blog .blog-post .blog-content .blog-title span {
+  display: block;
+}
+
+.blog .owl-carousel .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 2rem auto 0;
+  width: 100%;
+}
+
+.blog .owl-carousel .owl-nav .owl-prev .owl-nav-prev, .blog .owl-carousel .owl-nav .owl-prev .owl-nav-next, .blog .owl-carousel .owl-nav .owl-next .owl-nav-prev, .blog .owl-carousel .owl-nav .owl-next .owl-nav-next {
+  color: #3f4954;
+  background: transparent;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.blog .owl-carousel .owl-nav .owl-prev .owl-nav-prev:hover, .blog .owl-carousel .owl-nav .owl-prev .owl-nav-next:hover, .blog .owl-carousel .owl-nav .owl-next .owl-nav-prev:hover, .blog .owl-carousel .owl-nav .owl-next .owl-nav-next:hover {
+  color: #104f55;
+}
+
+.blog .owl-theme .owl-nav [class*="owl-"] {
+  outline: none;
+}
+
+.blog .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent;
+  color: #104f55;
+}
+
+/*===============================x END BLOG CAROUSEL x================================*/
+/*================================ SITE CONTENT =================================*/
+.site .posts {
+  margin-right: 2rem;
+}
+
+.site .posts .post-content {
+  width: 100%;
+}
+
+.site .posts .post-content .post-image {
+  padding: 1rem 0rem;
+  position: relative;
+}
+
+.site .posts .post-content .post-image div {
+  overflow: hidden;
+}
+
+.site .posts .post-content .post-image img {
+  width: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.site .posts .post-content .post-image img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.site .posts .post-content .post-image .post-info {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 18vw;
+  border-radius: 3rem;
+}
+
+.site .posts .post-content .post-image .post-info span {
+  padding: 0 .5rem;
+}
+
+.site .posts .post-content .post-title a {
+  font-family: "Anton", cursive;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.site .posts .post-content .post-title .post-btn {
+  border-radius: 0;
+  padding: .7rem 1.5rem;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.site .posts .pagiNation {
+  margin: 4rem 0;
+}
+
+.site .posts .pagiNation .pagination .page-item .page-link {
+  color: #3f4954;
+}
+
+.site .posts .pagiNation .pagination .page-item .page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.site .posts .pagiNation .pagination .page-item .page-link .fas:hover {
+  color: #104f55;
+}
+
+.site .sidebar .category .category-list {
+  font-family: "Livvic", sans-serif;
+  list-style: none;
+}
+
+.site .sidebar .category .category-list .category-item {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  margin: .8rem 0;
+  padding: .5rem 1rem;
+  border-radius: 3rem;
+}
+
+.site .sidebar .category .category-list .category-item .category-link {
+  color: black;
+}
+
+.site .sidebar .popular-post h2 {
+  padding-top: 7rem;
+}
+
+.site .sidebar .popular-post .post-content {
+  width: 100%;
+}
+
+.site .sidebar .popular-post .post-content .post-image {
+  padding: 1rem 0rem;
+  position: relative;
+}
+
+.site .sidebar .popular-post .post-content .post-image div {
+  overflow: hidden;
+}
+
+.site .sidebar .popular-post .post-content .post-image img {
+  width: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.site .sidebar .popular-post .post-content .post-image img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.site .sidebar .popular-post .post-content .post-image .post-info {
+  background: white;
+  padding: .4rem .1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+.site .sidebar .popular-post .post-content .post-image .post-info span {
+  padding: 0 .5rem;
+}
+
+.site .sidebar .popular-post .post-content .post-title a {
+  font-family: "Anton", cursive;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.site .sidebar .popular-post .post-content .post-title .post-btn {
+  border-radius: 0;
+  padding: .7rem 1.5rem;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.site .sidebar .newsletter {
+  padding-top: 3rem;
+}
+
+.site .sidebar .newsletter .form-element {
+  padding: .5rem 2rem;
+}
+
+.site .sidebar .newsletter .form-element .input-element {
+  width: 100%;
+  padding: .3rem .5rem;
+  font-family: "Lexend Deca", cursive;
+  font-size: 1rem;
+}
+
+.site .sidebar .newsletter .form-element .input-element:focus {
+  outline: none;
+}
+
+.site .sidebar .newsletter .form-element .form-btn {
+  padding: .8rem 32%;
+  border-radius: 0;
+  margin: 1rem 0;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  width: 100%;
+  font-family: "Livvic", sans-serif;
+}
+
+/*===============================x END SITE CONTENT x================================*/
+/*================================ END MAIN CONTENT =================================*/
 /*==================== VIEWPORT LESS THEN OR EQUAL TO 750PX ======================*/
 /*===================x VIEWPORT LESS THEN OR EQUAL TO 750PX x=====================*/
 /*========================  ========================*/
