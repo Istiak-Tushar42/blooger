@@ -78,6 +78,12 @@
     }
 
     .owl-carousel {
+        .item {
+            img {
+                height: 100%;
+            }
+        }
+
         .owl-nav {
             position: absolute;
             top: 0%;
@@ -111,7 +117,7 @@
 /*================================ SITE CONTENT =================================*/
 .site {
     .posts {
-        margin-right: 2rem;
+        margin-right: 1rem;
         .post-content {
             // margin-bottom: 5rem;
             width: 100%;
@@ -252,7 +258,7 @@
         }
 
         .newsletter {
-            padding-top: 3rem;
+            padding-top: 17.6rem;
             .form-element {
                 padding: .5rem 2rem;
 
@@ -276,8 +282,22 @@
                 }
             }
         }
+
+        .popular-tags {
+            padding: 5rem 0;
+            .tags {
+                margin-left: .2rem;
+                .tag {
+                    background: $sky;
+                    padding: .4rem 1rem;
+                    border-radius: 3rem;
+                    margin: .3rem;
+                }
+            }
+        }
     }
 }
 /*===============================x END SITE CONTENT x================================*/
+
 
 /*================================ END MAIN CONTENT =================================*/

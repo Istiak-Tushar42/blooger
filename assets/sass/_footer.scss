@@ -1,0 +1,88 @@
+
+/*===============================x FOOTER x================================*/
+.footer {
+    height: 100%;
+    background: $bg-color;
+    padding: 1rem 0 2rem;
+    position: relative;
+    h2 {
+        color: white;
+        padding: 1rem 0;
+    }
+
+    h4 {
+        a {
+            color: white;
+            &:hover {
+                color: $midnight;
+            }
+        }
+    }
+
+    .newsletter {
+        .form-element {
+            background: black;
+            display: inline-block;
+
+            input {
+                padding: .5rem .7rem;
+                border: none;
+                background: transparent;
+                color: white;
+                font-family: $josefin;
+                font-size: 1rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            span {
+                background: $sky;
+                padding: .6rem .7rem;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .instagram {
+        div {
+            img {
+                display: inline-block;
+                width: 25%;
+                height: 50%;
+                margin: .3rem .4rem;
+                transition: all 1s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .follow {
+        div {
+            a {
+                i.fab {
+                    color: white;
+                    padding: 0 .4rem;
+                }
+            }
+        }
+    }
+
+    .move-up {
+        position: absolute;
+        right: 6%;
+        top: 50%;
+
+        span {
+            color: $midnight;
+            &:hover{
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+}
+/*===============================x END FOOTER x================================*/

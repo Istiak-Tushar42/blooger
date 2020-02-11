@@ -233,6 +233,10 @@ p {
   display: block;
 }
 
+.blog .owl-carousel .item img {
+  height: 100%;
+}
+
 .blog .owl-carousel .owl-nav {
   position: absolute;
   top: 0%;
@@ -263,7 +267,7 @@ p {
 /*===============================x END BLOG CAROUSEL x================================*/
 /*================================ SITE CONTENT =================================*/
 .site .posts {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .site .posts .post-content {
@@ -403,7 +407,7 @@ p {
 }
 
 .site .sidebar .newsletter {
-  padding-top: 3rem;
+  padding-top: 17.6rem;
 }
 
 .site .sidebar .newsletter .form-element {
@@ -430,10 +434,167 @@ p {
   font-family: "Livvic", sans-serif;
 }
 
+.site .sidebar .popular-tags {
+  padding: 5rem 0;
+}
+
+.site .sidebar .popular-tags .tags {
+  margin-left: .2rem;
+}
+
+.site .sidebar .popular-tags .tags .tag {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: .4rem 1rem;
+  border-radius: 3rem;
+  margin: .3rem;
+}
+
 /*===============================x END SITE CONTENT x================================*/
 /*================================ END MAIN CONTENT =================================*/
-/*==================== VIEWPORT LESS THEN OR EQUAL TO 750PX ======================*/
-/*===================x VIEWPORT LESS THEN OR EQUAL TO 750PX x=====================*/
+/*===============================x FOOTER x================================*/
+.footer {
+  height: 100%;
+  background: #0f0f0f;
+  padding: 1rem 0 2rem;
+  position: relative;
+}
+
+.footer h2 {
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer h4 a {
+  color: white;
+}
+
+.footer h4 a:hover {
+  color: #104f55;
+}
+
+.footer .newsletter .form-element {
+  background: black;
+  display: inline-block;
+}
+
+.footer .newsletter .form-element input {
+  padding: .5rem .7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: "Josefin Sans", cursive;
+  font-size: 1rem;
+}
+
+.footer .newsletter .form-element input:focus {
+  outline: none;
+}
+
+.footer .newsletter .form-element span {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: .6rem .7rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.footer .instagram div img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: .3rem .4rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.footer .instagram div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer .follow div a i.fab {
+  color: white;
+  padding: 0 .4rem;
+}
+
+.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+.footer .move-up span {
+  color: #104f55;
+}
+
+.footer .move-up span:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/*===============================x END FOOTER x================================*/
+/*==================== VIEWPORT LESS THEN OR EQUAL TO 520PX ======================*/
+@media only screen and (max-width: 520px) {
+  main .blog {
+    height: 125vh;
+  }
+  main .site .posts .post-content .post-image .post-info {
+    display: none;
+  }
+  .footer .rights {
+    padding: 0 1.6rem;
+  }
+  .footer .rights h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/*===================x VIEWPORT LESS THEN OR EQUAL TO 520PX x=====================*/
+/*==================== VIEWPORT LESS THEN OR EQUAL TO 768PX ======================*/
+@media only screen and (max-width: 768px) {
+  body .blog {
+    overflow: hidden;
+  }
+  body .blog .owl-carousel .item {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 13rem;
+  }
+  body .site .sidebar .newsletter {
+    padding-top: 5rem;
+  }
+  body .footer .follow {
+    margin-bottom: 3rem;
+  }
+}
+
+/*===================x VIEWPORT LESS THEN OR EQUAL TO 768PX x=====================*/
+/*==================== VIEWPORT LESS THEN OR EQUAL TO 991PX ======================*/
+@media only screen and (max-width: 991px) {
+  .site .posts .post-content .post-image .post-info {
+    left: 0;
+    bottom: 1rem;
+    border-radius: 0;
+  }
+  .site .sidebar .post-image .post-info {
+    display: none;
+  }
+  .site .sidebar .newsletter .form-element {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .site .sidebar .newsletter .form-element .input-element {
+    width: 100%;
+  }
+  .footer h4 {
+    font-size: 1.1rem;
+  }
+  .footer .newsletter input {
+    width: 270px;
+  }
+}
+
+/*===================x VIEWPORT LESS THEN OR EQUAL TO 991PX x=====================*/
 /*========================  ========================*/
 /*============x=========== END ============x============*/
 /*========================  ========================*/

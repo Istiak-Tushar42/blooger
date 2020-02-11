@@ -1,5 +1,113 @@
-/*==================== VIEWPORT LESS THEN OR EQUAL TO 750PX ======================*/
-// @media only screen and (max-width: 750px) {
-    
-// }
-/*===================x VIEWPORT LESS THEN OR EQUAL TO 750PX x=====================*/
+/*==================== VIEWPORT LESS THEN OR EQUAL TO 520PX ======================*/
+@media only screen and (max-width: 520px) {
+    main {
+        .blog {
+            height: 125vh;
+        }
+
+        .site {
+            .posts {
+                .post-content {
+                    .post-image {
+                        .post-info {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .rights{
+            padding: 0 1.6rem;
+            h4 {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+/*===================x VIEWPORT LESS THEN OR EQUAL TO 520PX x=====================*/
+
+
+
+/*==================== VIEWPORT LESS THEN OR EQUAL TO 768PX ======================*/
+@media only screen and (max-width: 768px) {
+    body {
+        .blog {
+            overflow: hidden;
+            .owl-carousel {
+                .item {
+                    margin: auto;
+                    margin-top: 1.5rem;
+                    margin-bottom: 13rem;
+                }
+            }
+        }
+
+        .site {
+            .sidebar {
+                .newsletter {
+                    padding-top: 5rem;
+                }
+            }
+        }
+
+        .footer {
+            .follow {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+/*===================x VIEWPORT LESS THEN OR EQUAL TO 768PX x=====================*/
+
+
+
+/*==================== VIEWPORT LESS THEN OR EQUAL TO 991PX ======================*/
+@media only screen and (max-width: 991px) {
+    .site {
+        .posts {
+            .post-content {
+                .post-image {
+                    .post-info {
+                        left: 0;
+                        bottom: 1rem;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+
+        .sidebar {
+            .post-image {
+                .post-info {
+                    display: none;
+                }
+            }
+            .newsletter {
+                .form-element {
+                    padding-left: 0;
+                    padding-right: 0;
+                    .input-element {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        h4 {
+            font-size: 1.1rem;
+        }
+
+        .newsletter {
+            input {
+                width: 270px;
+            }
+        }
+    }
+}
+/*===================x VIEWPORT LESS THEN OR EQUAL TO 991PX x=====================*/
