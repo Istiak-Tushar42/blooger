@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>Blooger Admin Area | Pages</title>
+    <!-- CKEDITOR CDN -->
+    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+</head>
+<body>
+    <!------------------------------- NAVBAR --------------------------------->
+    <section class="navigation">
+        <nav class="navbar navbar-expand-md">
+            <div class="container p-0">
+                <a class="navbar-brand" href="dashboard.html">Blooger</a>
+                <button class="navbar-toggler bg-dark p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <i class="fas fa-align-right text-white fa-lg"></i>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i> Welcome, Istiak Hossain Tushar
+                            </a>
+                            <div class="dropdown-menu py-0" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+                                <a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!------------x------------------ END NAVBAR -------------x--------------->
+    
+    
+    <!----------------------------- HEADER ---------------------------->
+    <header class="header py-3">
+        <div class="container p-0">
+            <div class="row no-gutters">
+                <div class="col-md-10">
+                    <h1><i class="fas fa-cog"></i> Pages <small>Manage Site Pages</small></h1>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="dropdown create">
+                        <button class="btn btn-create dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Create
+                        </button>
+                        <div class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" type="button" data-toggle="modal" data-target="#addPage">Add Page</a>
+                            <a class="dropdown-item" type="button" data-toggle="modal" data-target="#addPost">Add Post</a>
+                            <a class="dropdown-item" type="button" data-toggle="modal" data-target="#addUser">Add User</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------x----------------- END HEADER -----------x------------>
+
+
+    <!----------------------------- MAIN SECTION -------------------------->
+    <main>
+        <!--------------- BREADCRUMB ----------------->
+        <section id="breadcrumb">
+            <div class="container p-0">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="dashboard.html" class="">Dashboard</a></li>
+                    <li class="breadcrumb-item active"><a href="pages.html" class="">Pages</a></li>
+                    <li class="breadcrumb-item"><a href="post.html" class="">Posts</a></li>
+                    <li class="breadcrumb-item"><a href="users.html" class="">Users</a></li>
+                </ol>
+            </div>
+        </section>
+        <!--------------- END BREADCRUMB ----------------->
+
+        <!------------ MAIN ------------>
+        <section id="main" class="main-content">
+            <div class="container p-0">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <div class="list-group mb-4">
+                            <a href="dashboard.html" class="list-group-item list-group-item-action active">
+                                <i class="fas fa-cog"></i> Dashboard
+                            </a>
+                            <a href="pages.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-list-alt"></i> Pages <span class="badge my-badge">12</span>
+                            </a>
+                            <a href="post.html" class="list-group-item list-group-item-action">
+                                <span><i class="fas fa-pencil-alt"></i> Posts</span> <span class="badge my-badge">33</span>
+                            </a>
+                            <a href="users.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-user"></i> Users <span class="badge my-badge">203</span>
+                            </a>
+                        </div>
+
+                        <div class="card p-3 mb-4">
+                            <h4>Disk Space Used</h4>
+                            <div class="progress mb-3">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    60%
+                                </div>
+                            </div>
+                            <h4>Bandwidth Used</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    40%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <!-- PAGES OVERVIEW -->
+                        <div class="card ml-md-4 mb-4">
+                            <div class="card-header border-bottom-0 midnight">
+                                <h3 class="card-title">Pages</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Filter Pages...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PAGES OVERVIEW -->
+
+                        <!-- LATEST USERS -->
+                        <div class="card ml-md-4 mb-4">
+                            <div class="card-body">
+                                <table class="table text-center table-striped table-responsive-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Published</th>
+                                            <th scope="col">Created</th>
+                                            <th scope="col">Update</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Home</th>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td>Feb 14, 2020</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Edit</a>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">About</th>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td>Feb 14, 2020</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Edit</a>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Contact</th>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td>Feb 14, 2020</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Edit</a>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Services</th>
+                                            <td><i class="fas fa-times"></i></td>
+                                            <td>Feb 14, 2020</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning">Edit</a>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">About</th>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td>Feb 14, 2020</td>
+                                            <td>
+                                                <a href="edit.html" class="btn btn-warning">Edit</a>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">About</th>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td>Feb 14, 2020</td>
+                                            <td>
+                                                <a href="edit.html" class="btn btn-warning">Edit</a>
+                                                <a href="" class="btn btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- END LATEST USERS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------ END MAIN ------------>
+    </main>
+    <!----------x-----------------  END MAIN SECTION -----------x------------>
+
+
+
+    <!----------------------------  FOOTER ------------------------>
+    <footer class="footer">
+        <div class="container p-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <p>copyright &copy; 2020 All Rights Reserved Blooger</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------x-----------------  END FOOTER -----------x------------>
+
+
+    <!----------------- CREATING MODALS ----------------->
+
+    <!-- ADD POST -->
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="pageTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="container p-0">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="modal-content">
+                            <form action="">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="pageTitle">Add Page</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="pageTitle">Page Title</label>
+                                        <input type="text" name="title" id="pageTitle" class="form-control" placeholder="page title">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pageBody">Page Body</label>
+                                        <textarea name="editor1" id="editor1" class="form-control" placeholder="page body"></textarea>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            <input type="checkbox"> Published
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="metaTags">Meta Tags</label>
+                                        <input type="text" name="metaTags" id="metaTags" class="form-control" placeholder="Add Some Tags">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="metaDescription">Meta Description</label>
+                                        <input type="text" name="metaDescription" id="metaDescription" class="form-control" placeholder="Add Meta Description">
+                                    </div>
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END ADD POST -->
+
+    <!----------------- END CREATING MODALS ------------->
+
+    
+
+    <!-- OPTIONAL JAVASCRIPT FILES -->
+    <script src="assets/scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/scripts/popper.min.js"></script>
+    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/dashboard.js"></script>
+</body>
+</html>

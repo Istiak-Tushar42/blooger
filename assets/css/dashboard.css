@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Anton|Josefin+Sans|Lexend+Deca|Livvic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: "Lexend Deca", cursive;
+  font-size: 1rem;
+}
+
+.btn {
+  color: wheat;
+}
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+/*========================================= NAVBAR ===========================================*/
+.navigation {
+  background: #104f55;
+}
+
+.navigation .navbar {
+  vertical-align: middle;
+  min-height: 33px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navigation .navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.navigation .navbar .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navigation .navbar .navbar-nav li {
+  padding-top: 3px;
+  padding-bottom: .6rem;
+}
+
+.navigation .navbar .navbar-nav li a {
+  height: 33px;
+  color: white;
+}
+
+.navigation .navbar .navbar-nav li a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navigation .navbar .navbar-nav li.active a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navigation .navbar .navbar-nav .dropdown .dropdown-menu {
+  background: #104f55;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  margin-top: .5rem;
+}
+
+.navigation .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+  border: 0;
+}
+
+.navigation .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #104f55;
+}
+
+.navigation .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:focus {
+  background: #104f55 !important;
+}
+
+/*======================x================== END NAVBAR =========================x=================*/
+/*========================================= HEADER ===========================================*/
+.header {
+  background: #333;
+  color: #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.header .create {
+  padding-top: .5rem;
+}
+
+.header .create .btn-create {
+  border: solid 1px rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 0;
+  width: 80%;
+  border-radius: 3rem;
+}
+
+.header .create .dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  margin-top: 1.67rem;
+}
+
+.header .create .dropdown-menu .dropdown-item {
+  color: #333;
+}
+
+.header .create .dropdown-menu .dropdown-item:active {
+  background: wheat;
+}
+
+/*======================x================== END HEADER =========================x=================*/
+/*========================================= BREADCRUMB ===========================================*/
+.breadcrumb {
+  background: #ccc;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #333;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item.active a {
+  color: #104f55;
+}
+
+/*======================x================== END BREADCRUMB =========================x=================*/
+/*========================================= MAIN ===========================================*/
+.main-content .list-group a.active {
+  background: #104f55;
+  color: #fff;
+  outline: 0;
+  border: 0;
+}
+
+.main-content .list-group .list-group-item .my-badge {
+  background: #333;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main-content .progress .progress-bar {
+  background: #333;
+  color: white;
+}
+
+.main-content .card .midnight {
+  background: #104f55;
+  color: white;
+}
+
+/*======================x================== END MAIN =========================x=================*/
+/*========================================= FOOTER ===========================================*/
+.footer {
+  background: #333;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+/*======================x================== END FOOTER =========================x=================*/
+/*# sourceMappingURL=dashboard.css.map */

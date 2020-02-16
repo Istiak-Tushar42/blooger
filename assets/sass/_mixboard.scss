@@ -1,0 +1,8 @@
+@mixin create {
+    border: solid 1px $text-white;
+    background: $text-white;
+    color: $text-primary;
+    border-radius: 0;
+    width: 80%;
+    border-radius: 3rem;
+}

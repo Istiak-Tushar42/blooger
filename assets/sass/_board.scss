@@ -1,0 +1,163 @@
+@import "mixin";
+
+/*========================================= NAVBAR ===========================================*/
+.navigation {
+    background: $midnight;
+    .navbar {
+        vertical-align: middle;
+        min-height: 33px;
+        margin-bottom: 0;
+        border-radius: 0;
+
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+            color: white;
+            font-size: 1.6rem;
+            &:hover {
+                color: $text-white;
+            }
+        }
+
+        .navbar-nav {
+            li {
+                padding-top: 3px;
+                padding-bottom: .6rem;
+                a {
+                    height: 33px;
+                    color: white;
+                    &:hover {
+                        color: $text-white;
+                    }
+                }
+            }
+            li.active {
+                a {
+                    color: $text-white;
+                }
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    background: $midnight;
+                    width: 100%;
+                    border: 0;
+                    border-radius: 0;
+                    margin-top: .5rem;
+                    .dropdown-item {
+                        border: 0;
+                        &:hover {
+                            background: $text-white;
+                            color: $midnight;
+                        }
+                        &:focus {
+                            background: $midnight !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*======================x================== END NAVBAR =========================x=================*/
+
+
+/*========================================= HEADER ===========================================*/
+.header {
+    background: $text-primary;
+    color: $white;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    .create {
+        padding-top: .5rem;
+        .btn-create {
+            @include create;
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+            margin-top: 1.67rem;
+            .dropdown-item {
+                color: $text-primary;
+                &:active {
+                    background: wheat;
+                }
+            }
+        }
+    }
+}
+/*======================x================== END HEADER =========================x=================*/
+
+
+/*========================================= BREADCRUMB ===========================================*/
+.breadcrumb {
+    background: #ccc;
+    .breadcrumb-item {
+        a {
+            color: #333;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .breadcrumb-item.active {
+        a {
+            color: $midnight;
+        }
+    }
+
+}
+/*======================x================== END BREADCRUMB =========================x=================*/
+
+
+/*========================================= MAIN ===========================================*/
+.main-content {
+    .list-group {
+        a.active {
+            background: $midnight;
+            color: #fff;
+            outline: 0;
+            border: 0;
+        }
+
+        .list-group-item {
+            .my-badge {
+                background: $text-primary;
+                color: white;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .progress {
+        .progress-bar {
+            background: #333;
+            color: white;
+        }
+    }
+
+    .card {
+        .midnight {
+            background: $midnight;
+            color: white;
+        }
+    }
+}
+/*======================x================== END MAIN =========================x=================*/
+
+
+/*========================================= FOOTER ===========================================*/
+.footer {
+    background: $text-primary;
+    color: $white;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    p {
+        margin-bottom: 0;
+    }
+}
+/*======================x================== END FOOTER =========================x=================*/
